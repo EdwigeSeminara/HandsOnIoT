@@ -22,6 +22,8 @@ namespace HandsOnIoT
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        internal MainViewModel ViewModel = new MainViewModel();
+
         public MainPage()
         {
             this.InitializeComponent();

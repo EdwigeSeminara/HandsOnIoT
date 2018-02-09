@@ -5,4 +5,23 @@
     xmlns:local="using:HandsOnIoT"
     RequestedTheme="Light">
 
+    <Application.Resources>
+        
+        <!-- Theme Resources -->
+        <!-- Header -->
+        <SolidColorBrush x:Key="TitlebarBackgroundBrush"
+                         Color="#FF404040" />
+        <SolidColorBrush x:Key="StatusbarBackgroundBrush"
+                         Color="DimGray" />
+        <!-- Splitview Pane -->
+        <SolidColorBrush x:Key="SplitViewBackgroundBrush"
+                         Color="DarkBlue" />
+        <SolidColorBrush x:Key="SplitViewForegroundBrush"
+                         Color="White" />
+        <SolidColorBrush x:Key="SplitViewHighlightBrush"
+                         Color="OrangeRed" />
+        <!-- Splitview Content -->
+        <SolidColorBrush x:Key="PageBackgroundBrush"
+                         Color="White" />
+    </Application.Resources>
 </Application>
