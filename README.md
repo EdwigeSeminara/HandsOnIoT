@@ -36,7 +36,7 @@ Ensure to get the solution and open it with Visual Studio 2017.
 * Microsoft.Azures.Devices.Client
 * Microsoft.Devices.Tpm
 
-## Deploy the solution on your device
+## Deploy the solution to your device
 
 We are going to deploy the solution on your raspi.
 To achieve that, follw these steps : 
