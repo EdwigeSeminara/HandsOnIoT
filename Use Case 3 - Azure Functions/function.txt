@@ -1,0 +1,42 @@
+var Client = require('azure-iothub').Client;
+var Message = require('azure-iot-common').Message;
+var connectionString = process.env.AzureIoTHubConnectionString;
+
+module.exports = function (context, data) {
+   
+  var jsonMessage = JSON.stringify(data);
+  context.log("Writing message" + jsonMessage);
+  var client = Client.fromConnectionString(connectionString);
+  client.open(function (err) {
+    if (err) {
+      console.error('Could not connect: ' + err.message);
+      context.log('Could not connect: ' + err.message);
+      } else {
+      console.log('Client connected');
+      context.log('Client connected');
+    
+        // Create a message and send it to the device
+        
+        var obj = '{' + '"Name":"Turn off device"' +'}';
+        var message = new Message(JSON.stringify(obj));
+      
+      console.log('Sending message: ' + message);
+      context.log(connectionString);
+      client.send("SimulatedDevice", obj, printResultFor('send'));
+    context.log("sent" + obj);
+      }
+      context.done();
+    });
+}
+// Helper function to print results in the console
+function printResultFor(op) {
+  return function printResult(err, res) {
+    if (err) {
+      console.log(op + ' error: ' + err.toString());
+      
+    } else {
+      console.log(op + ' status: ' + res.constructor.name);
+       
+    }
+  };
+}
