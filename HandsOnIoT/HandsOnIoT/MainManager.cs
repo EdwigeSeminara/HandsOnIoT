@@ -8,9 +8,9 @@ namespace HandsOnIoT
 {
     public static class MainManager
     {
-        const string IoTHubUri = "handsonlabiothub.azure-devices.net"; // Enter your IoT Hub url here : IoT Hub HostName
-        const string DeviceId = "raspidevice"; // Enter the name of your device
-        const string DeviceKey = "XNglOZ0cinCKCiKXNM+WbXvw9HWs/n/nTnuNqbVBRkQ="; // Enter your device key : connectionString primary key
+        const string IoTHubUri = "myIoTHub.azure-devices.net"; // Enter your IoT Hub url here : IoT Hub HostName
+        const string DeviceId = "myDeviceName"; // Enter the name of your device
+        const string DeviceKey = "myKey"; // Enter your device key : connectionString primary key
 
 
         public static async Task<string> Send(double temperatureToSend, DateTime dateToSend, string locationToSend)
