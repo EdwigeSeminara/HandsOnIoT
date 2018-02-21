@@ -5,14 +5,16 @@
     xmlns:local="using:HandsOnIoT"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    DataContext="{StaticResource MainViewModel}"
+    x:Name="MyPage">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBlock Text="{x:Bind ViewModel.Message, Mode=OneWay}"
+            <TextBlock Text="{Binding Message, Mode=OneWay}"
                        Foreground="Black"
                        Margin="6" />
-            <GridView ItemsSource="{x:Bind ViewModel.Sensors, Mode=OneWay}"
+            <GridView ItemsSource="{Binding Sensors, Mode=OneWay}"
                       SelectionMode="None"
                       Margin="4">
                 <GridView.ItemTemplate>
@@ -40,41 +42,47 @@
                             <Grid Background="Silver"
                                   Height="50"
                                   Grid.Row="3">
-                                <AppBarButton Command="{Binding TestCommand}"
+                                <AppBarButton Command="{Binding DataContext.TestCommand, ElementName=MyPage}"
                                               Icon="Play"
                                               Foreground="{StaticResource SplitViewBackgroundBrush}" />
-                                <AppBarButton Command="{Binding SendCommand}"
+                                <AppBarButton Command="{Binding DataContext.SendCommand, ElementName=MyPage}"
                                               Icon="Mail" HorizontalAlignment="Center"
                                               Foreground="{StaticResource SplitViewBackgroundBrush}" />
-                                <AppBarButton Icon="Message"
+                                <AppBarButton Icon="Message" IsEnabled="False"
                                               Foreground="{StaticResource SplitViewBackgroundBrush}"
                                               HorizontalAlignment="Right">
                                     <Button.Flyout>
                                         <Flyout>
-                                            <TextBlock Text="{Binding TestDescription}" />
+                                            <TextBlock Text="{Binding DataContext.Message}" />
                                         </Flyout>
                                     </Button.Flyout>
                                 </AppBarButton>
                             </Grid>
 
-                            <TextBlock Text="{Binding State}"
+                            <TextBlock Text="{Binding DataContext.State, ElementName=MyPage}"
                                        TextWrapping="WrapWholeWords"
                                        Grid.Row="2"
                                        Padding="8 4" />
-                            <Image Source="{Binding ImagePath}"
+                            <Image Source="Assets/sensor.jpg"
                                    Height="200"
                                    Width="200"
                                    Stretch="Uniform"
                                    Grid.Row="1" />
-                            <!--<Border Visibility="{Binding IsUnderTest, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                    BorderThickness="4"
-                                    BorderBrush="{StaticResource SplitViewHighlightBrush}"
-                                    Grid.ColumnSpan="10"
-                                    Grid.RowSpan="10" />-->
                         </Grid>
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
+
+            <Border BorderThickness="8" CornerRadius="3.2" HorizontalAlignment="Left"  VerticalAlignment="Top">
+                <TextBlock Text="{Binding Log}" 
+                        Margin="20"
+                        TextWrapping="WrapWholeWords" HorizontalAlignment="Left" HorizontalTextAlignment="Left"
+                        Width="500"
+                        Height="500"/>
+            </Border>
         </StackPanel>
+
+
+
     </Grid>
 </Page>

@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="ImagePath" />
+    <RootPropertyPathName Name="Log" />
+    <RootPropertyPathName Name="Sensors" />
+    <RootPropertyPathName Name="DataContext" />
     <RootPropertyPathName Name="State" />
-    <RootPropertyPathName Name="TestDescription" />
+    <RootPropertyPathName Name="Message" />
     <RootPropertyPathName Name="SendCommand" />
     <RootPropertyPathName Name="TestCommand" />
     <RootPropertyPathName Name="Port" />
@@ -14,12 +16,15 @@
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Resources" />
     </RootType>
+    <RootType FullName="HandsOnIoT.MainViewModel" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -41,9 +46,12 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="HorizontalTextAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />
@@ -51,13 +59,20 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
@@ -67,12 +82,12 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Stretch" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Command" />
       <RootProperty Name="Icon" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsEnabled" />
       <RootProperty Name="Flyout" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Flyout">

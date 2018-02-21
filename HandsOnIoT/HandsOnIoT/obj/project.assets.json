@@ -23673,11 +23673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT.csproj",
+      "projectUniqueName": "C:\\Users\\edwige.seminara\\Desktop\\HandsOnIoT_save\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT.csproj",
       "projectName": "HandsOnIoT",
-      "projectPath": "C:\\Dev\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT.csproj",
+      "projectPath": "C:\\Users\\edwige.seminara\\Desktop\\HandsOnIoT_save\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT.csproj",
       "packagesPath": "C:\\Users\\edwige.seminara\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\HandsOnIoT\\HandsOnIoT\\HandsOnIoT\\obj\\",
+      "outputPath": "C:\\Users\\edwige.seminara\\Desktop\\HandsOnIoT_save\\HandsOnIoT\\HandsOnIoT\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -7,4 +7,15 @@
     <AuthenticationMode>Universal</AuthenticationMode>
     <RemoteDebugEnabled>true</RemoteDebugEnabled>
   </PropertyGroup>
+  <PropertyGroup>
+    <Source>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</Source>
+    <SmallTileSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</SmallTileSource>
+    <MediumTileSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</MediumTileSource>
+    <WideTileSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</WideTileSource>
+    <LargeTileSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</LargeTileSource>
+    <AppIconSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</AppIconSource>
+    <SplashScreenSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\edwige.seminara\Downloads\raspberry-pi %281%29.png</PackageLogoSource>
+  </PropertyGroup>
 </Project>

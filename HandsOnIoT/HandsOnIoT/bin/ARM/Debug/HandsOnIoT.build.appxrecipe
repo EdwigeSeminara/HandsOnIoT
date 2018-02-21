@@ -10,22 +10,22 @@
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>c880188c-4c7c-4289-acaf-5109c3bd1048</PackageIdentityName>
     <PackageIdentityPublisher>CN=edwige.seminara</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\HandsOnIoT.exe">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\HandsOnIoT.exe">
       <PackagePath>entrypoint\HandsOnIoT.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\edwige.seminara\.nuget\packages\dotnetty.buffers\0.4.7\lib\netstandard1.3\DotNetty.Buffers.dll">
@@ -685,47 +685,226 @@
     <AppxPackagedFile Include="C:\Users\edwige.seminara\.nuget\packages\windowsazure.storage\8.7.0\lib\win8\Microsoft.WindowsAzure.Storage.dll">
       <PackagePath>Microsoft.WindowsAzure.Storage.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\HandsOnIoT.xr.xml">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Assets\sensor.jpg">
+      <PackagePath>Assets\sensor.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\HandsOnIoT.xr.xml">
       <PackagePath>HandsOnIoT.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\Core\HandsOnIoT.exe">
+    <AppxPackagedFile Include="C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\bin\ARM\Debug\Core\HandsOnIoT.exe">
       <PackagePath>HandsOnIoT.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

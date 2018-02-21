@@ -180,15 +180,33 @@ namespace HandsOnIoT.HandsOnIoT_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "HandsOnIoT.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable = new string[12];
+            _typeNameTable[0] = "HandsOnIoT.MainViewModel";
+            _typeNameTable[1] = "HandsOnIoT.ViewModelBase";
+            _typeNameTable[2] = "Object";
+            _typeNameTable[3] = "HandsOnIoT.TemperatureSensor";
+            _typeNameTable[4] = "String";
+            _typeNameTable[5] = "Boolean";
+            _typeNameTable[6] = "Double";
+            _typeNameTable[7] = "System.Windows.Input.ICommand";
+            _typeNameTable[8] = "System.Collections.Generic.List`1<HandsOnIoT.TemperatureSensor>";
+            _typeNameTable[9] = "HandsOnIoT.MainPage";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[11] = "Windows.UI.Xaml.Controls.UserControl";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::HandsOnIoT.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable = new global::System.Type[12];
+            _typeTable[0] = typeof(global::HandsOnIoT.MainViewModel);
+            _typeTable[1] = typeof(global::HandsOnIoT.ViewModelBase);
+            _typeTable[2] = typeof(global::System.Object);
+            _typeTable[3] = typeof(global::HandsOnIoT.TemperatureSensor);
+            _typeTable[4] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::System.Boolean);
+            _typeTable[6] = typeof(global::System.Double);
+            _typeTable[7] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[8] = typeof(global::System.Collections.Generic.List<global::HandsOnIoT.TemperatureSensor>);
+            _typeTable[9] = typeof(global::HandsOnIoT.MainPage);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -223,7 +241,16 @@ namespace HandsOnIoT.HandsOnIoT_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::HandsOnIoT.MainPage(); }
+        private object Activate_0_MainViewModel() { return new global::HandsOnIoT.MainViewModel(); }
+        private object Activate_3_TemperatureSensor() { return new global::HandsOnIoT.TemperatureSensor(); }
+        private object Activate_8_List() { return new global::System.Collections.Generic.List<global::HandsOnIoT.TemperatureSensor>(); }
+        private object Activate_9_MainPage() { return new global::HandsOnIoT.MainPage(); }
+        private void VectorAdd_8_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::HandsOnIoT.TemperatureSensor>)instance;
+            var newItem = (global::HandsOnIoT.TemperatureSensor)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -235,18 +262,79 @@ namespace HandsOnIoT.HandsOnIoT_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  HandsOnIoT.MainPage
-                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  HandsOnIoT.MainViewModel
+                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HandsOnIoT.ViewModelBase"));
+                userType.Activator = Activate_0_MainViewModel;
+                userType.AddMemberName("TemperatureSensor");
+                userType.AddMemberName("Message");
+                userType.AddMemberName("State");
+                userType.AddMemberName("Log");
+                userType.AddMemberName("IsBusy");
+                userType.AddMemberName("Temperature");
+                userType.AddMemberName("TestCommand");
+                userType.AddMemberName("SendCommand");
+                userType.AddMemberName("Sensors");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  HandsOnIoT.ViewModelBase
+                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 2:   //  Object
                 xamlType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 3:   //  HandsOnIoT.TemperatureSensor
+                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_3_TemperatureSensor;
+                userType.AddMemberName("Name");
+                userType.AddMemberName("Port");
+                userType.AddMemberName("State");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  String
+                xamlType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Boolean
+                xamlType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Double
+                xamlType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  System.Windows.Input.ICommand
+                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  System.Collections.Generic.List`1<HandsOnIoT.TemperatureSensor>
+                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_8_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 9:   //  HandsOnIoT.MainPage
+                userType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -254,11 +342,197 @@ namespace HandsOnIoT.HandsOnIoT_XamlTypeInfo
         }
 
 
+        private object get_0_MainViewModel_TemperatureSensor(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.TemperatureSensor;
+        }
+        private void set_0_MainViewModel_TemperatureSensor(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.TemperatureSensor = (global::HandsOnIoT.TemperatureSensor)Value;
+        }
+        private object get_1_MainViewModel_Message(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.Message;
+        }
+        private void set_1_MainViewModel_Message(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.Message = (global::System.String)Value;
+        }
+        private object get_2_MainViewModel_State(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.State;
+        }
+        private void set_2_MainViewModel_State(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.State = (global::System.String)Value;
+        }
+        private object get_3_MainViewModel_Log(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.Log;
+        }
+        private void set_3_MainViewModel_Log(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.Log = (global::System.String)Value;
+        }
+        private object get_4_MainViewModel_IsBusy(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.IsBusy;
+        }
+        private void set_4_MainViewModel_IsBusy(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.IsBusy = (global::System.Boolean)Value;
+        }
+        private object get_5_MainViewModel_Temperature(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.Temperature;
+        }
+        private void set_5_MainViewModel_Temperature(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.Temperature = (global::System.Double)Value;
+        }
+        private object get_6_MainViewModel_TestCommand(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.TestCommand;
+        }
+        private object get_7_MainViewModel_SendCommand(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.SendCommand;
+        }
+        private object get_8_MainViewModel_Sensors(object instance)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            return that.Sensors;
+        }
+        private void set_8_MainViewModel_Sensors(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.MainViewModel)instance;
+            that.Sensors = (global::System.Collections.Generic.List<global::HandsOnIoT.TemperatureSensor>)Value;
+        }
+        private object get_9_TemperatureSensor_Name(object instance)
+        {
+            var that = (global::HandsOnIoT.TemperatureSensor)instance;
+            return that.Name;
+        }
+        private void set_9_TemperatureSensor_Name(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.TemperatureSensor)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_10_TemperatureSensor_Port(object instance)
+        {
+            var that = (global::HandsOnIoT.TemperatureSensor)instance;
+            return that.Port;
+        }
+        private void set_10_TemperatureSensor_Port(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.TemperatureSensor)instance;
+            that.Port = (global::System.String)Value;
+        }
+        private object get_11_TemperatureSensor_State(object instance)
+        {
+            var that = (global::HandsOnIoT.TemperatureSensor)instance;
+            return that.State;
+        }
+        private void set_11_TemperatureSensor_State(object instance, object Value)
+        {
+            var that = (global::HandsOnIoT.TemperatureSensor)instance;
+            that.State = (global::System.Boolean)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "HandsOnIoT.MainViewModel.TemperatureSensor":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "TemperatureSensor", "HandsOnIoT.TemperatureSensor");
+                xamlMember.Getter = get_0_MainViewModel_TemperatureSensor;
+                xamlMember.Setter = set_0_MainViewModel_TemperatureSensor;
+                break;
+            case "HandsOnIoT.MainViewModel.Message":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "Message", "String");
+                xamlMember.Getter = get_1_MainViewModel_Message;
+                xamlMember.Setter = set_1_MainViewModel_Message;
+                break;
+            case "HandsOnIoT.MainViewModel.State":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "State", "String");
+                xamlMember.Getter = get_2_MainViewModel_State;
+                xamlMember.Setter = set_2_MainViewModel_State;
+                break;
+            case "HandsOnIoT.MainViewModel.Log":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "Log", "String");
+                xamlMember.Getter = get_3_MainViewModel_Log;
+                xamlMember.Setter = set_3_MainViewModel_Log;
+                break;
+            case "HandsOnIoT.MainViewModel.IsBusy":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "IsBusy", "Boolean");
+                xamlMember.Getter = get_4_MainViewModel_IsBusy;
+                xamlMember.Setter = set_4_MainViewModel_IsBusy;
+                break;
+            case "HandsOnIoT.MainViewModel.Temperature":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "Temperature", "Double");
+                xamlMember.Getter = get_5_MainViewModel_Temperature;
+                xamlMember.Setter = set_5_MainViewModel_Temperature;
+                break;
+            case "HandsOnIoT.MainViewModel.TestCommand":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "TestCommand", "System.Windows.Input.ICommand");
+                xamlMember.Getter = get_6_MainViewModel_TestCommand;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "HandsOnIoT.MainViewModel.SendCommand":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "SendCommand", "System.Windows.Input.ICommand");
+                xamlMember.Getter = get_7_MainViewModel_SendCommand;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "HandsOnIoT.MainViewModel.Sensors":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.MainViewModel");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "Sensors", "System.Collections.Generic.List`1<HandsOnIoT.TemperatureSensor>");
+                xamlMember.Getter = get_8_MainViewModel_Sensors;
+                xamlMember.Setter = set_8_MainViewModel_Sensors;
+                break;
+            case "HandsOnIoT.TemperatureSensor.Name":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.TemperatureSensor");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_9_TemperatureSensor_Name;
+                xamlMember.Setter = set_9_TemperatureSensor_Name;
+                break;
+            case "HandsOnIoT.TemperatureSensor.Port":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.TemperatureSensor");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "Port", "String");
+                xamlMember.Getter = get_10_TemperatureSensor_Port;
+                xamlMember.Setter = set_10_TemperatureSensor_Port;
+                break;
+            case "HandsOnIoT.TemperatureSensor.State":
+                userType = (global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HandsOnIoT.TemperatureSensor");
+                xamlMember = new global::HandsOnIoT.HandsOnIoT_XamlTypeInfo.XamlMember(this, "State", "Boolean");
+                xamlMember.Getter = get_11_TemperatureSensor_State;
+                xamlMember.Setter = set_11_TemperatureSensor_State;
+                break;
+            }
             return xamlMember;
         }
     }

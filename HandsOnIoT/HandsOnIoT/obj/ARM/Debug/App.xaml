@@ -6,7 +6,8 @@
     RequestedTheme="Light">
 
     <Application.Resources>
-        
+        <local:MainViewModel x:Key="MainViewModel" />
+
         <!-- Theme Resources -->
         <!-- Header -->
         <SolidColorBrush x:Key="TitlebarBackgroundBrush"

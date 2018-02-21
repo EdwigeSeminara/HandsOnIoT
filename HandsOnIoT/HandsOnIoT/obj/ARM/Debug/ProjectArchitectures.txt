@@ -1,1 +1,1 @@
-C:\Dev\HandsOnIoT\HandsOnIoT\HandsOnIoT\HandsOnIoT.csproj;arm
+C:\Users\edwige.seminara\Desktop\HandsOnIoT_save\HandsOnIoT\HandsOnIoT\HandsOnIoT.csproj;arm
